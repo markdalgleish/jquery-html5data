@@ -1,0 +1,57 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+	<title>$.html5data - QUnit Test Suite</title>  
+	<link rel="stylesheet" href="qunit.css" type="text/css" media="screen">
+	<script type="text/javascript" src="qunit.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="../jquery.html5data.js"></script>
+	<script type="text/javascript" src="test.js"></script>
+</head>  
+<body>  
+	<h1 id="qunit-header">$.html5data - QUnit Test Suite</h1>
+	<h2 id="qunit-banner"></h2>  
+	<div id="qunit-testrunner-toolbar"></div>
+	<h2 id="qunit-userAgent"></h2>
+	<ol id="qunit-tests"></ol>
+	
+	<div id="testElements">
+		<!-- Test all parsing -->
+		<div id="parse"
+			data-string-value="string"
+		
+			data-true-lowercase="true"
+			data-true-mixed-case="True"
+			data-true-upper-case="TRUE"
+			
+			data-false-lowercase="false"
+			data-false-mixed-case="False"
+			data-false-upper-case="FALSE"
+			
+			data-null-lowercase="null"
+			data-null-mixed-case="Null"
+			data-null-upper-case="NULL"
+			
+			data-number-positive-integer="10"
+			data-number-negative-integer="-10"
+			data-number-positive-decimal="10.123"
+			data-number-negative-decimal="-10.123"
+			
+			data-json-object='{"key":"value"}'
+			data-json-array="[true,true,true]"
+			
+			data-custom-parse="parse this string as true"
+			
+			data-disabled-booleans="true"
+			data-disabled-nulls="null"
+			data-disabled-numbers="10"
+			
+			data-static-value="true">
+		</div>
+		
+		<!-- Test selectors with multiple elements -->
+		<div class="multi" data-test-value="true"></div>
+		<div class="multi" data-test-value="true"></div>
+	</div>
+</body>
+</html>
